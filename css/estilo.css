@@ -5,9 +5,20 @@
     grid-template-areas: 'cabecalho formulario'
                           'principal formulario'
                           'rodape formulario';
-    height: 100vh; /*vh(view port height) significa o quanto o conteudo vai ocupar da tela em relação a porcentagem total da respectiva tela*/                   
+    height: 100vh; /*vh(view port height) significa o quanto o conteudo vai ocupar da tela em relação a porcentagem total da respectiva tela*/
+    font-family: arial; 
 }
-header{background-color: blue; grid-area: cabecalho;}
-main{background-color: red; grid-area: principal;}
-aside{background-color: chartreuse; grid-area: formulario;}
-footer{background-color: orange; grid-area: rodape;}
+
+/*CABEÇALHO*/
+header{ grid-area: cabecalho;}
+.logo{display: flex;  align-items: center; padding: 10px 30px;}
+.logo img{width: 80px;}
+    
+/*PRINCIPAL*/
+main{ grid-area: principal;}
+
+/*FORMULÁRIO*/
+aside{ grid-area: formulario;}
+
+/*RODAPÉ*/
+footer{ grid-area: rodape;}
