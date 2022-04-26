@@ -7,15 +7,21 @@
                           'rodape formulario';
     height: 100vh; /*vh(view port height) significa o quanto o conteudo vai ocupar da tela em relação a porcentagem total da respectiva tela*/
     font-family: arial; 
+    color: #ffffff;
 }
 
 /*CABEÇALHO*/
 header{ grid-area: cabecalho;}
 .logo{display: flex;  align-items: center; padding: 10px 30px;}
-.logo img{width: 80px; color: burlywood; font-family: arial;}
+.logo img{width: 150px}
+.logo h1{font-family: verdana; color: #274083;}
     
 /*PRINCIPAL*/
-main{ grid-area: principal;}
+main{ grid-area: principal; background: linear-gradient(to right, #48a0df, #274083); display: flex; align-items: center; padding: 2% 0 2% 50px; line-height: 1cm;}
+main figure img{ width: 100%;}
+main figure{width: 200px; margin-right: 20%;}
+main h1{font-size: 40px; width: 70%; margin-bottom: 30px; line-height: 1.5cm;}
+main h3{width: 80%;}
 
 /*FORMULÁRIO*/
 aside{ grid-area: formulario;}
