@@ -12,7 +12,7 @@
 /*CABEÇALHO*/
 header{ grid-area: cabecalho;}
 .logo{display: flex;  align-items: center; padding: 10px 30px;}
-.logo img{width: 80px;}
+.logo img{width: 80px; color: burlywood; font-family: arial;}
     
 /*PRINCIPAL*/
 main{ grid-area: principal;}
