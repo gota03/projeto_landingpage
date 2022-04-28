@@ -38,3 +38,15 @@ footer{grid-area: rodape; background-color: #cccccc; color: #274083; padding: 30
 footer section{margin: 0 20px;}
 footer .rodape-titulo{margin-bottom: 20px;}
 footer .rodape-conteudo{line-height: 0.7cm;}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1200px){
+    .principal{
+        grid-template-columns: 100%;
+        grid-template-areas: ;
+        'cabecalho'
+        'principal'
+        'rodape'
+        'formulario';
+    }
+}
