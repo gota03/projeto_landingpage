@@ -11,20 +11,30 @@
 }
 
 /*CABEÇALHO*/
-header{ grid-area: cabecalho;}
+header{grid-area: cabecalho;}
 .logo{display: flex;  align-items: center; padding: 10px 30px;}
 .logo img{width: 150px}
 .logo h1{font-family: verdana; color: #274083;}
     
 /*PRINCIPAL*/
-main{ grid-area: principal; background: linear-gradient(to right, #48a0df, #274083); display: flex; align-items: center; padding: 2% 0 2% 50px; line-height: 1cm;}
-main figure img{ width: 100%;}
+main{grid-area: principal; background: linear-gradient(to right, #48a0df, #274083); display: flex; align-items: center; padding: 2% 0 2% 50px; line-height: 1cm;}
+main figure img{width: 100%;}
 main figure{width: 200px; margin-right: 20%;}
 main h1{font-size: 40px; width: 70%; margin-bottom: 30px; line-height: 1.5cm;}
 main h3{width: 80%;}
 
 /*FORMULÁRIO*/
-aside{ grid-area: formulario;}
+aside{grid-area: formulario; background-color: #274083; padding-top: 30px; text-align: center;}
+aside form{width: 90%; padding-top: 30px; margin: 0 auto; display: flex; flex-direction: column; row-gap: 20px;}
+aside input, select{width: 100%; padding: 15px; font-size: 16px; margin-bottom: 10px; border: none;}
+aside input[type=submit]{background-color: #11dd2c; font-weight: bold; padding: 20px 0; cursor:pointer; transition: all 0.25s linear;}
+
+/*EFEITOS*/
+form :where(input, select):focus{outline: 3.5px solid white;}
+form input[type=submit]:hover{box-shadow: 0px 3.5px 7.35px whitesmoke; transition: all 0.25s linear;}
 
 /*RODAPÉ*/
-footer{ grid-area: rodape;}
+footer{grid-area: rodape; background-color: #cccccc; color: #274083; padding: 30px; display: flex;}
+footer section{margin: 0 20px;}
+footer .rodape-titulo{margin-bottom: 20px;}
+footer .rodape-conteudo{line-height: 0.7cm;}
